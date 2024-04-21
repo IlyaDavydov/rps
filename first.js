@@ -1,4 +1,4 @@
-function getComputerChoice() {
+/*function getComputerChoice() {
      let r = randomInt(1, 3);
      if (r == 1) {
         return ["rock", 1];
@@ -77,5 +77,22 @@ let answer;
 do {
     console.log(playGame());
     answer = prompt("If you want to play one time more enter y, otherwise something else");
-} while (answer == "y");
+} while (answer == "y");*/
 
+const clicker = document.querySelector(".elements .image.rock");
+const pcChoice = document.querySelector(".score .image.pc");
+
+const tempRock = "url('rock.png')";
+const tempPaper = "url('paper.png')";
+const tempScissors = "url('scissors.png')";
+
+const tempArr = [];
+tempArr.push(tempRock);
+tempArr.push(tempPaper);
+tempArr.push(tempScissors);
+
+function choose() {
+    pcChoice.style.backgroundImage = tempArr[counter % tempArr.length];
+} 
+
+clicker.addEventListener("click", choose);
