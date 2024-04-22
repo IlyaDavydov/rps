@@ -12,7 +12,7 @@ body {
 
 .image {
     background-color: pink;
-    border: solid black 2px;
+    border: solid white 2px;
     border-radius: 50px;
     width: 200px;
     height: 200px;
@@ -34,7 +34,8 @@ body {
 }
 
 .image.user, .image.pc {
-    background-image: url('rock.png'); 
+    background-image: url('question.jpg'); 
+    background-color: white;
 }
 
 .score p {
@@ -54,11 +55,12 @@ h1 {
 
 h3 {
     margin-top: 50px;
+    font-size: 32px;
 }
 
 .signatures {
     display: flex;
-    gap: 265px;
+    gap: 250px;
     font-size: 32px;
 }
 
@@ -66,6 +68,34 @@ h3 {
     margin-top: auto;
 }
 
+.signatures .PC {
+    margin-right: 5px;
+}
+
+.result
+ {
+    display: none;
+ }
+
+ .result p {
+    font-weight: 900;
+ }
+
+ button {
+    height: 50px;
+    width: 100px;
+    border-radius: 50px;
+    margin-left: 10px;
+    color: white;
+    border: solid white 2px;
+    background-color: lightpink;
+    font-weight: 900;
+ }
+
+ body {
+    background-color: lightpink;
+    color: white;
+ }
 
 
 
